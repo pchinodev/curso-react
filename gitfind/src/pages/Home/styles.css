@@ -1,0 +1,80 @@
+.App {
+    height: 100vh;
+}
+
+.conteudo {
+    position: relative;
+    height: calc(100vh - 52px);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.info {
+    width: 350px;
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    overflow-y: auto;
+    padding-bottom: 40px;
+}
+
+.search {
+    display: flex;
+    gap: 16px;
+}
+
+.error,
+.empty {
+    color: rgba(229, 229, 229, 0.7);
+    font-size: 14px;
+}
+
+.perfil {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.profile {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    object-fit: cover;
+}
+
+.perfil h3 {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.perfil span {
+    color: rgba(229, 229, 229, 0.6);
+    font-size: 14px;
+}
+
+.perfil p {
+    margin-top: 8px;
+    color: rgba(229, 229, 229, 0.7);
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.repositorio {
+    margin-bottom: 24px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
+}
