@@ -2,12 +2,16 @@ import React from 'react'
 import { InputContainer } from './styles'
 
 
-function Input() {
+function Input({ value, onChange }) {
   return (
     <InputContainer>
-      <input placeholder="Digite o nome do repositório..." />
+      <input
+        value={value}
+        onChange={onChange}
+        placeholder="Digite o nome do repositório..."
+      />
     </InputContainer>
   )
 }
 
-export default Input
+export default Input;
